@@ -2,3 +2,4 @@
 # Debian-specific vars file for strongswan
 
 strongswan_config_base: /etc
+strongswan_netlink_conf_base: "{{strongswan_config_base}}/strongswan.d"

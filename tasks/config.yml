@@ -9,7 +9,7 @@
 - name: Configure kernel-netlink settings
   template:
     src: kernel-netlink.conf.j2
-    dest: /etc/strongswan.d/charon/kernel-netlink.conf
+    dest: "{{strongswan_netlink_conf_base}}/charon/kernel-netlink.conf"
     mode: 0750
   notify:
     restart strongswan
