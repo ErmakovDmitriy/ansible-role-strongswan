@@ -5,8 +5,10 @@
   service:
     name=apparmor
     state=restarted
+  become: True
 
 - name: restart strongswan
   service:
     name=strongswan
     state=restarted
+  become: True
